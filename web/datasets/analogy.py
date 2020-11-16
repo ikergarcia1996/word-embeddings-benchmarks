@@ -9,9 +9,8 @@ import glob
 import os
 import numpy as np
 
-from sklearn.utils import check_random_state
+from sklearn.utils import check_random_state, Bunch
 
-from sklearn.datasets.base import Bunch
 from .utils import _get_dataset_dir, _fetch_file, _change_list_to_np
 from ..utils import standardize_string
 
