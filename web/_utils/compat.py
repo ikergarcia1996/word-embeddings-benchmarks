@@ -8,7 +8,7 @@ import hashlib
 if sys.version_info[0] == 3:
     import pickle
     import io
-    import urllib
+    import urllib.request
 
     _basestring = str
     cPickle = pickle
