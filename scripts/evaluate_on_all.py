@@ -75,7 +75,7 @@ if __name__ == "__main__":
             load_kwargs['vocab_size'] = sum(1 for line in open(fname))
             load_kwargs['dim'] = len(next(open(fname)).split()) - 1
 
-        w = load_embedding(fname, format=format, normalize=True, lower=True, clean_words=options.clean_words,
+        w = load_embedding(fname, format=format, normalize=True, lower=False, clean_words=options.clean_words,
                            load_kwargs=load_kwargs)
 
     out_fname = options.output if options.output else "results.csv"
