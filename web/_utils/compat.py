@@ -24,7 +24,7 @@ if sys.version_info[0] == 3:
 else:
     import cPickle
     import StringIO
-    import urllib
+    import urllib.request
     import urllib2
     import urlparse
     import types
